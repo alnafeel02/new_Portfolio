@@ -1,0 +1,52 @@
+:root {
+  /* Color Palette - HSL */
+  --primary-hue: 250; /* Deep Purple/Blue */
+  --primary-sat: 80%;
+  --primary-light: 60%;
+  
+  /* Light Mode Defaults */
+  --bg-color: hsl(210, 20%, 98%);
+  --surface-color: hsl(0, 0%, 100%);
+  --text-primary: hsl(220, 15%, 10%);
+  --text-secondary: hsl(220, 10%, 40%);
+  --accent-color: hsl(var(--primary-hue), var(--primary-sat), var(--primary-light));
+  --border-color: hsl(220, 15%, 90%);
+
+  /* Spacing & Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Fluid Typography */
+  --fs-xl: clamp(2.5rem, 8vw, 5rem);
+  --fs-lg: clamp(1.75rem, 5vw, 2.5rem);
+  --fs-md: clamp(1.1rem, 3vw, 1.25rem);
+  --fs-sm: clamp(0.9rem, 2vw, 1rem);
+}
+
+[data-theme='dark'] {
+  /* Dark Mode Overrides */
+  --bg-color: hsl(220, 20%, 10%);
+  --surface-color: hsl(220, 20%, 15%);
+  --text-primary: hsl(220, 15%, 95%);
+  --text-secondary: hsl(220, 10%, 70%);
+  --accent-color: hsl(var(--primary-hue), var(--primary-sat), 70%); /* Lighter for dark mode */
+  --border-color: hsl(220, 20%, 25%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  line-height: 1.6;
+}

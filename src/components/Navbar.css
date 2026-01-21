@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s, backdrop-filter 0.3s, border-bottom 0.3s;
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+@supports (backdrop-filter: blur(10px)) {
+  .navbar.scrolled {
+    background: color-mix(in srgb, var(--bg-color) 80%, transparent);
+    backdrop-filter: blur(12px);
+  }
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.dot {
+  color: var(--accent-color);
+}
+
+.nav-desktop {
+  display: none;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: none;
+  }
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.theme-toggle {
+  background: none;
+  color: var(--text-primary);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--border-color);
+}
+
+.mobile-toggle {
+  background: none;
+  color: var(--text-primary);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  border-top: 1px solid var(--border-color);
+  z-index: 999; /* Ensure it's below navbar but above content */
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-link {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  display: block; /* Make the whole area clickable */
+  padding: 10px 0;
+}
+
+.theme-toggle-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+  background: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
