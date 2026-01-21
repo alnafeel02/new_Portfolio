@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './About.css';
-import resume from '../assets/AL_NAFEEL_FULL_STACK_2025.pdf';
+import resume from '../assets/AL_NAFEEL_FULL_STACK_2026.pdf';
 
 gsap.registerPlugin(ScrollTrigger);
 
