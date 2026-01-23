@@ -22,6 +22,13 @@ export default function Projects() {
       live: '#'
     },
      {
+      title: 'E-Commerce Project',
+      description: 'Full-featured online store with dynamic product catalog, shopping cart functionality, and secure payment processing.',
+      image: ecommImg,
+      github: 'https://github.com/alnafeel02/e-commerce-nafy',
+      live: 'https://e-commerce-nafy.vercel.app/'
+    },
+     {
       title: 'Profile Management Project',
       description: 'A comprehensive system for managing user profiles including CRUD operations, image uploads, and secure data handling with a responsive dashboard.',
       image: proImg,
@@ -35,13 +42,7 @@ export default function Projects() {
       github: 'https://github.com/alnafeel02/Authentication_Project1',
       live: '#'
     },
-    {
-      title: 'E-Commerce Project',
-      description: 'Full-featured online store with dynamic product catalog, shopping cart functionality, and secure payment processing.',
-      image: ecommImg,
-      github: 'https://github.com/alnafeel02/e-commerce-nafy',
-      live: '#'
-    },
+   
     
   ];
 
