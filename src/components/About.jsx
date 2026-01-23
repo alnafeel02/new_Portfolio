@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './About.css';
-import resume from '../assets/AL_NAFEEL_FULL_STACK_2026.pdf';
+import resume from '../assets/AlNafeel_FullStackDeveloper.pdf';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,7 +69,7 @@ export default function About() {
             ))}
           </div>
           <div className="resume-container">
-            <a href={resume} download="AL_NAFEEL_FULL_STACK_2025.pdf" className="resume-btn">
+            <a href={resume} download="AL_NAFEEL_FULLSTACKDEVELOPER.pdf" className="resume-btn">
               Download Resume
             </a>
           </div>

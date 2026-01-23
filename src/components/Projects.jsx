@@ -23,7 +23,7 @@ export default function Projects() {
     },
      {
       title: 'Profile Management Project',
-      description: 'Full-featured online store with dynamic product catalog, shopping cart functionality, and secure payment processing.',
+      description: 'A comprehensive system for managing user profiles including CRUD operations, image uploads, and secure data handling with a responsive dashboard.',
       image: proImg,
       github: 'https://github.com/alnafeel02/Profile_Management_Project',
       live: 'https://sage-macaron-aeab4e.netlify.app/'
