@@ -19,7 +19,7 @@ export default function Projects() {
       description: 'A holistic wellness platform offering video classes, progress tracking, and personalized schedules for mindfulness.',
       image: yogaImg,
       github: 'https://github.com/alnafeel02/Yoga_Course_Project',
-      live: '#'
+      live: 'https://yoga-course-project.vercel.app/'
     },
      {
       title: 'E-Commerce Project',
