@@ -33,7 +33,7 @@ export default function Projects() {
       description: 'A comprehensive system for managing user profiles including CRUD operations, image uploads, and secure data handling with a responsive dashboard.',
       image: proImg,
       github: 'https://github.com/alnafeel02/Profile_Management_Project',
-      live: 'https://sage-macaron-aeab4e.netlify.app/'
+      live: 'https://profile-management-project-seven.vercel.app/'
     },
     {
       title: 'Authentication Project',
