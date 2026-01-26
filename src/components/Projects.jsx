@@ -40,7 +40,7 @@ export default function Projects() {
       description: 'Secure user management system featuring JWT implementation, OAuth integration, and role-based access control.',
       image: authImg,
       github: 'https://github.com/alnafeel02/Authentication_Project1',
-      live: '#'
+      live: 'https://authentication-project1-client.onrender.com/'
     },
    
     
