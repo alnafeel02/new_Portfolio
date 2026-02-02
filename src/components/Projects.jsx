@@ -8,12 +8,19 @@ import yogaImg from '../assets/image1.png';
 import authImg from '../assets/image2.png';
 import ecommImg from '../assets/image3.png';
 import proImg from '../assets/image4.png';
-
+import financeImg from '../assets/image5.png';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
   const container = useRef(null);
   const projects = [
+     {
+      title: 'Finance Management Project',
+      description: 'A responsive loan website enabling users to submit loan requests, check approval status, and view payment details.',
+      image: financeImg,
+      github: 'https://github.com/alnafeel02/finance_project',
+      live: 'https://finance-project-green.vercel.app/'
+    },
     {
       title: 'Yoga Course Project',
       description: 'A holistic wellness platform offering video classes, progress tracking, and personalized schedules for mindfulness.',
